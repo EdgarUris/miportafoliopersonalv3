@@ -1,0 +1,244 @@
+:root{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --color-fondo: #15144a;
+    --color-oscuro: #0e1d41;
+    --color-acento: #0c0e43;
+    --color-rojo-oscuro: #a41111;
+    --color-rojo-claro: #ff1919;
+    --radio-seccion: 15px;
+    background-color: var(--color-fondo);
+    box-sizing: border-box;
+    padding-right: 4px;
+    --margen-secciones: 20%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+#sobremi{
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    align-items: center;
+    gap: 24px;
+    padding: 20px 0 20px 20%;
+    margin-right: var(--margen-secciones);
+    color: white;
+}
+
+
+#sobremi p{
+    border-left: 2px solid var(--color-rojo-oscuro);
+    padding-left: 10px;
+}
+
+.foto-presentacion{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid var(--color-rojo-oscuro);
+    border-radius: 20px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    background: #0a023b;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10; /*es para que esté encima de todo lo que pase*/
+    padding: 5px 5px;
+}
+
+.informacion-header{
+    flex-shrink: 0;
+}
+
+header nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.cabecera{
+    color: white;
+}
+
+header a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 0px 10px;
+    background-color: var(--color-acento);
+    margin: 10px 0px;
+    border-radius: 8px;
+}
+
+.cabecera:hover{
+    color: var(--color-primario);
+    background-color: var(--color-oscuro);
+}
+
+#habilidades{
+    color: white;
+    background-color: var(--color-acento);
+    padding-inline: 20%;
+    padding-bottom: 30px;
+    padding-top: 35px;
+}
+
+/* es una pequeña sección de habilidades sigo confundiendolas*/
+.hab-seccion{
+    background-color: var(--color-fondo);
+    margin: 10px;
+    padding: 10px 10px;
+    border-radius: 6px;
+    color: white;
+    border: var(--color-rojo-oscuro) solid 1px;
+}
+
+.hab-seccion:hover{
+    background-color: var(--color-oscuro);
+    border: var(--color-rojo-claro) solid 2px;
+}
+
+#habilidades > div{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    background-color: var(--color-acento);
+}
+
+.item-bold{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.hab-titulo{
+    background-color: var(--color-acento);
+    padding: 0px 6px;
+    border-radius: 2px;
+    text-align: center;
+}
+
+ul{
+    font-size: large;
+}
+
+#formacion{
+    background-color: var(--color-acento);
+    color: white;
+    padding: 15px 20px;
+    border-radius: var(--radio-seccion);
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#formacion h2{
+    text-align: center;
+}
+
+#formacion h3{
+    border-left: var(--color-rojo-oscuro) solid 5px;
+    padding-left: 10px;
+    background-color: #082462;
+    color: white;
+    border-radius: 10px 0px;
+}
+
+#formacion h4{
+    border-left: var(--color-rojo-oscuro) solid 4px;
+    padding-bottom: 5px;
+    color: white;
+    background-color: #082462;
+    padding-left: 10px;
+    border-radius: 10px 0px;
+}
+
+#formacion p{
+    padding: 0 10px;
+    text-align: justify;
+    color: rgb(190, 190, 190);
+}
+
+#proyectos{
+    padding: 10% 15px;
+    background-color: var(--color-acento);
+    text-align: center;
+}
+
+#proyectos h2{
+    color: white;
+}
+
+#proyectos p{
+    color:  rgb(190, 190, 190);
+}
+
+#proyectos a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;
+    margin: 20px 0px;
+    background-color: var(--color-fondo);
+    border: var(--color-rojo-oscuro) solid 1px;
+    border-radius: 6px;
+}
+
+#proyectos a:hover{
+    color: var(--color-primario);
+    background-color: var(--color-oscuro);
+    border: var(--color-rojo-claro) solid 2px;
+    border-radius: 6px;
+}
+
+#intereses {
+    background-color: var(--color-fondo);
+    color: white;
+    padding: 10px 15px 20px 15px;
+    border-radius: var(--radio-seccion);
+    margin: 0 20%;
+}
+
+#intereses h3{
+    border-left: 2px solid var(--color-rojo-oscuro);
+    padding-left: 8px;
+}
+
+#intereses article{
+    background-color: var(--color-acento);
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: var(--radio-seccion);
+}
+
+footer{
+    background-color: #0a023b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#contactos a{
+    color: white;
+    text-decoration: none;
+    padding: 0px 10px;
+}
+
+#contactos a:hover{
+    color: var(--color-primario);
+}
+
+.centrado{
+    text-align: center;
+}
